@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoveFinder</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="nav-header">
+        <nav>
+            <ul>
+                <li class="nav-li"><a href="abilities.html">AbilityFinder</a></li>
+                <li class="nav-li"><a href="index.html">Main</a></li>
+                <li class="nav-li"><a href="moves.html">MoveFinder</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="page2-con">
+        <div class="card">
+            <div class="card-content">
+                <input class="textbox" type="text" id="pokemonType" placeholder= "Enter Pokemon Type">
+                <button class="card-btn" onClick="displayAffinities()">Fetch Type</button><br>
+            </div>
+        </div>
+        <div class="page2Ability-con">
+            <div id="page2con" class="card-content">
+                <h1 id="typeName"></h1>
+                <div id="pokemonAffinities">
+                    <h3 id="weakHead"></h3>
+                    <div id="pokemonWeakness"></div>
+                    <h3 id="resistsHead"></h3>
+                    <div id="pokemonResists"></div>
+                    <h3 id="immuneHead"></h3>
+                    <div id="pokemonImmunities"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="types.js"></script>
+</body>
+</html>

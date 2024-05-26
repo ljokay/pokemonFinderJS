@@ -1,0 +1,11 @@
+{
+    "type": "module",
+    "name": "poke-app",
+    "version": "1.0.0",
+    "description": "Pokemon Web Application that displays Information about a Pokemon, Types, Abilities, and Moves",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Landen Bock"
+}

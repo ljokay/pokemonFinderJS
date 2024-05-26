@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id ="mainFile">Main</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class = "top-con">
+        <header id="nav-header">
+            <nav>
+                <ul>
+                    <li class="nav-li"><a href="abilities.html">MoveFinder</a></li>
+                    <li class="nav-li"><a href="types.html">TypeFinder</a></li>
+                    <li class="nav-li"><a href="abilities.html">AbilityFinder</a></li>
+                </ul>
+            </nav>
+        </header>
+    <div class="container">
+        <label class="switch" onclick="toggleDM()">
+            <input type="checkbox" id="dmt">
+            <span class="slider"></span>
+        </label>
+        <div class="card-con">
+        <div class="card">
+            <div class="card-content">
+                <img class="card-img" src="Error/pokeball.png" alt="Pokemon Sprites" id="pokemonSprite" >
+                <h1 id="name"></h1>
+                <div id="pokemonTypes"></div>
+                <div id="pokemonAffinities">
+                    <h3 id="weakHead"></h3>
+                    <div id="pokemonWeakness"></div>
+                    <h3 id="resistsHead"></h3>
+                    <div id="pokemonResists"></div>
+                    <h3 id="immuneHead"></h3>
+                    <div id="pokemonImmunities"></div>
+                </div>
+                <input class="textbox" type="text" id="pokemonName" placeholder= "Enter Pokemon Name Ex: Ditto">
+                <button class="card-btn" onClick="generateAndCenter()">Fetch Pokemon</button><br>
+            </div>
+        </div>
+        </div>
+        <div class="info-con">
+            <div class="card-content">
+                <h1 id="info-header"></h1>
+                <p id="gen"></p>
+                <h1 id="abHeader"></h1>
+                <div id="ab-con">
+                </div>
+                <h4 id="hb"></h4>
+                <p id="hidden"></p>
+                <h1 id="move-head"></h1>
+                <div id="move-des-con"></div>
+                <div id="move-con"></div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
