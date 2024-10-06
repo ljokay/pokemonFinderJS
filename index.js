@@ -205,7 +205,7 @@ function displayInfo(data, pokemonName) {
         const listImg = document.createElement('img');
         
         if (typeClasses.hasOwnProperty(type)) {
-            listImg.src = "icons/Pokemon_Type_Icon_" + type.capitalizeFirstLetter() + ".png";
+            listImg.src = "icons/Pokemon_Type_Icon_" + capitalizeFirstLetter(type) + ".png";
         }
            
         listImg.classList.add("li-img");
